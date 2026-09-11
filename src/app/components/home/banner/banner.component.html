@@ -2,19 +2,18 @@
     <div [@bannerTrigger] class="container">
         <div class="section-box-banner">
             <div class="content">
-                <div>
-                    <h1>{{"Banner.Pretitle" | translate}}</h1>
-                </div>
+                <p class="banner-pretitle">{{"Banner.Pretitle" | translate}}</p>
                 <div class='banner-title'>
-                    <h2>Ahmed Mobasher.</h2>
-                    <h3>Senior Frontend Developer</h3>
+                    <h1>{{"Banner.Name" | translate}}</h1>
+                    <h2>{{"Banner.Role" | translate}}</h2>
                 </div>
                 <div class='banner-description'>
                     <p [innerHTML]='"Banner.Description" | translate' class="mt-4"></p>
                 </div>
             </div>
             <div class="div-btn-banner">
-                <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "banner", "email")' href="../../../../assets/cv/Ahmed-Mobasher-Sr-Frontend-9-2022.pdf" download="Ahmed-Mobasher-Sr-Frontend-9-2022.pdf" target="_black" class="main-btn">
+                <a (click)='analyticsService.sendAnalyticEvent("click_download_cv", "banner", "cv")'
+                   [href]="cvPath" [attr.download]="cvFileName" class="main-btn">
                     {{"Banner.ActionBtn" | translate}}
                 </a>
             </div>

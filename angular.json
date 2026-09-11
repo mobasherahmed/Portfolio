@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "muhmmad-portfolio": {
+        "ahmed-mobasher-portfolio": {
             "projectType": "application",
             "schematics": {},
             "root": "",
@@ -19,7 +19,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/muhmmad-portfolio",
+                        "outputPath": "dist/ahmed-mobasher-portfolio",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -28,7 +28,9 @@
                             "src/favicon.ico",
                             "src/assets",
                             "src/manifest.webmanifest",
-                            "src/.htaccess"
+                            "src/.htaccess",
+                            "src/robots.txt",
+                            "src/sitemap.xml"
                         ],
                         "styles": [
                             "node_modules/@fortawesome/fontawesome-free/css/all.css",
@@ -72,8 +74,8 @@
                                 },
                                 {
                                     "type": "anyComponentStyle",
-                                    "maximumWarning": "6kb",
-                                    "maximumError": "10kb"
+                                    "maximumWarning": "8kb",
+                                    "maximumError": "12kb"
                                 }
                             ],
                             "serviceWorker": true,
@@ -85,18 +87,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "muhmmad-portfolio:build"
+                        "browserTarget": "ahmed-mobasher-portfolio:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "muhmmad-portfolio:build:production"
+                            "browserTarget": "ahmed-mobasher-portfolio:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "muhmmad-portfolio:build"
+                        "browserTarget": "ahmed-mobasher-portfolio:build"
                     }
                 },
                 "test": {
@@ -112,7 +114,8 @@
                             "src/manifest.webmanifest"
                         ],
                         "styles": [
-                            "src/styles.css"
+                            "src/styles.scss",
+                            "src/fonts.scss"
                         ],
                         "scripts": []
                     }
@@ -134,18 +137,18 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "muhmmad-portfolio:serve"
+                        "devServerTarget": "ahmed-mobasher-portfolio:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "muhmmad-portfolio:serve:production"
+                            "devServerTarget": "ahmed-mobasher-portfolio:serve:production"
                         }
                     }
                 }
             }
         }
     },
-    "defaultProject": "muhmmad-portfolio",
+    "defaultProject": "ahmed-mobasher-portfolio",
     "schematics": {
         "@schematics/angular:component": {
             "styleext": "scss"

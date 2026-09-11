@@ -1,0 +1,379 @@
+{
+  "Meta.Title": "أحمد مباشر | مهندس واجهات أمامية أول وقائد تقني",
+  "Meta.Description": "مهندس واجهات أمامية أول وقائد تقني بخبرة تتجاوز ٩ سنوات في بناء تطبيقات Angular واسعة النطاق — مستودعات Nx، والواجهات المصغّرة، وأنظمة التصميم، ومعماريات الواجهات المؤسسية.",
+  "Header.Item1": "نبذة عني",
+  "Header.Item2": "الخبرات",
+  "Header.Item3": "الأعمال",
+  "Header.Item4": "تواصل معي",
+  "Header.cvBtn": "السيرة الذاتية",
+  "Header.cvName": "Ahmed-Mobasher-CV.pdf",
+  "Header.Skip": "تخطٍّ إلى المحتوى الرئيسي",
+  "Header.LanguageLabel": "اختيار اللغة",
+  "Banner.Pretitle": "مرحبًا، اسمي",
+  "Banner.Name": "أحمد مباشر.",
+  "Banner.Role": "أبني معماريات الواجهات الأمامية وأقودها.",
+  "Banner.Description": "مهندس واجهات أمامية أول وقائد تقني للواجهات الأمامية، بخبرة <span class='underline'>تتجاوز ٩ سنوات</span> في بناء تطبيقات ويب قابلة للتوسّع وعالية الأداء. أعمل أساسًا باستخدام <span class='underline'>Angular</span> و<span class='underline'>TypeScript</span>، وأصمّم <span class='underline'>مستودعات Nx</span> و<span class='underline'>الواجهات المصغّرة</span> و<span class='underline'>أنظمة التصميم</span> التي تبني عليها عدة فرق منتجات.",
+  "Banner.ActionBtn": "تحميل السيرة الذاتية",
+  "AboutMe.Title": "نبذة عني",
+  "AboutMe.Paragraphs": [
+    "مهندس واجهات أمامية مقيم في القاهرة، أمضيت أكثر من ٩ سنوات في العمل على منتجات كبيرة وطويلة العمر بدلًا من المشاريع المؤقتة. درست علوم الحاسب في <span class='underline'>جامعة الزقازيق</span>، وبدأت مسيرتي المهنية عام ٢٠١٩ في بناء تطبيقات الويب والتطبيقات الهجينة للهواتف.",
+    "منذ يونيو ٢٠٢٣ أعمل في <span class='underline'>Netsync</span> (بوسطن، عن بُعد)، ومنذ يونيو ٢٠٢٥ أتولى دور <span class='underline'>قائد تقني للواجهات الأمامية</span> — مسؤولًا عن معمارية الواجهات ومعايير الهندسة عبر فرق التسليم، وأدير مباشرةً فريقًا من ٦ مطورين.",
+    "يتركّز عملي عند التقاء المعمارية بتجربة المطوّر: هيكلة <span class='underline'>مستودعات Nx</span> و<span class='underline'>الواجهات المصغّرة</span>، وتصميم مكتبات مكوّنات مشتركة تعتمد عليها فرق أخرى، وضبط إدارة الحالة باستخدام <span class='underline'>Signals و SignalStore و RxJS و NgRx</span>. كما أستخدم <span class='underline'>Claude و Cursor و GitHub Copilot</span> يوميًا — كأدوات تسرّع التنفيذ وإعادة الهيكلة وكتابة الاختبارات، وفق المعايير نفسها المطبّقة على أي كود آخر.",
+    "أكثر التقنيات التي أعمل بها:"
+  ],
+  "AboutMe.Skills": [
+    "Angular",
+    "TypeScript",
+    "RxJS",
+    "Signals & SignalStore",
+    "NgRx",
+    "Nx Monorepos",
+    "Micro Frontends",
+    "Design Systems",
+    "PrimeNG",
+    "AG Grid Enterprise",
+    "Tailwind CSS",
+    "GraphQL",
+    "Cypress & Playwright",
+    "Storybook",
+    "Docker & CI/CD"
+  ],
+  "AboutMe.ImageAlt": "صورة شخصية لأحمد مباشر",
+  "Experience.Title": "الخبرات المهنية",
+  "Experience.Jobs": [
+    {
+      "Tab": "Netsync",
+      "Title": "قائد تقني للواجهات الأمامية / مهندس واجهات أمامية أول",
+      "Date": "يونيو ٢٠٢٣ – حتى الآن · بوسطن، الولايات المتحدة (عن بُعد)",
+      "Description": [
+        "أتولى دور القائد التقني للواجهات الأمامية منذ يونيو ٢٠٢٥ — بمسؤولية تقنية كاملة عن معمارية الواجهات ومعايير الهندسة واتخاذ القرارات التقنية عبر فرق تسليم المنتجات، مع الإدارة المباشرة لفريق من ٦ مطوّرين.",
+        "أقود دورة التسليم كاملة، من تفكيك المتطلبات وتصميم الحلول وصولًا إلى مراجعة الكود والتنفيذ والنشر.",
+        "أصمّم وأقود تطبيق الواجهات المصغّرة ومستودعات Nx لهيكلة تطبيقات مؤسسية قابلة للتوسّع والصيانة.",
+        "أصمّم أنظمة تصميم ومكتبات مكوّنات مشتركة قابلة لإعادة الاستخدام — نماذج ديناميكية، ومكوّنات الخطوط الزمنية، وجداول بيانات مؤسسية — للحفاظ على اتساق تجربة المستخدم وتسريع التسليم بين الفرق.",
+        "أصمّم إدارة الحالة باستخدام Signal و SignalStore إلى جانب RxJS و NgRx: مخازن محدودة النطاق لكل خاصية، وإزالة الطلبات المكرّرة، وتخزين مؤقت لبيانات القوائم والمراجع لتفادي إعادة الجلب غير الضرورية مع دورة حياة المكوّنات.",
+        "أعالج مشكلات الاعتماديات والبناء والتدقيق المعقّدة في Nx، وأشخّص حدود ذاكرة Node.js في عمليات البناء الكبيرة، وأضبط التصيير من الخادم، وأجهّز النشر عبر Docker و Nginx، وأحلّ مشكلات المحتوى المختلط في Cloud Run، وأدير بيئات متعددة النهايات الخلفية.",
+        "أدمج Claude و Cursor و GitHub Copilot في سير العمل الهندسي اليومي للتنفيذ وإعادة الهيكلة وتصحيح الأخطاء وتوليد الاختبارات واستكشاف البدائل المعمارية، مع الحفاظ على معايير الجودة نفسها."
+      ]
+    },
+    {
+      "Tab": "Geidea",
+      "Title": "مطوّر واجهات أمامية أول",
+      "Date": "سبتمبر ٢٠٢٢ – أغسطس ٢٠٢٣ · الرياض، السعودية",
+      "Description": [
+        "بنيت منصة نقاط بيع مؤسسية باستخدام Angular و NgRx والواجهات المصغّرة ضمن معمارية واجهات معيارية.",
+        "طوّرت تدفقات عمل معاملات معقّدة ومكوّنات قابلة لإعادة الاستخدام مع الحفاظ على حدود واضحة بين نطاقات الخصائص.",
+        "حسّنت إدارة الحالة وأداء التصيير عبر تدفقات نقاط البيع واسعة النطاق.",
+        "سلّمت الخصائص من طرف إلى طرف — تحليل المتطلبات والتطوير والاختبار والإصدار — ضمن فرق Agile."
+      ]
+    },
+    {
+      "Tab": "Softec",
+      "Title": "مطوّر واجهات أمامية أول",
+      "Date": "مارس ٢٠٢٢ – سبتمبر ٢٠٢٢ · المعادي، القاهرة",
+      "Description": [
+        "تولّيت تنفيذ خصائص الواجهة الأمامية من المتطلبات الوظيفية حتى الإصدار، لتطبيقات لوجستية وإدارة نقل كثيفة البيانات.",
+        "استخدمت Angular Material و CSS الحديثة وأنماط الواجهات المتجاوبة لتقديم واجهات سهلة الوصول وقابلة للصيانة.",
+        "عملت مع فرق منتجات متعدّدة التخصصات لحلّ العقبات التقنية وتحسين قابلية الاستخدام."
+      ]
+    },
+    {
+      "Tab": "ITWORX Education",
+      "Title": "مطوّر واجهات أمامية",
+      "Date": "أبريل ٢٠٢١ – مارس ٢٠٢٢ · مدينة نصر، القاهرة",
+      "Description": [
+        "ساهمت في WinjiGo، وهو نظام إدارة تعلّم يخدم وزارة التربية والتعليم في الإمارات.",
+        "طوّرت بوّابات إدارة الطلاب وأولياء الأمور والامتحانات باستخدام Angular و AngularJS و ASP.NET Core.",
+        "شاركت في تطوير الخصائص من طرف إلى طرف، ومراجعات الكود، وتخطيط الدورات ضمن منهجية Agile."
+      ]
+    },
+    {
+      "Tab": "MEITS",
+      "Title": "مطوّر واجهات أمامية",
+      "Date": "أبريل ٢٠١٩ – مارس ٢٠٢١ · المعادي، القاهرة",
+      "Description": [
+        "طوّرت تطبيقات ويب متجاوبة وتطبيقات هجينة للهواتف باستخدام Ionic و Angular Material، مع التركيز على سهولة الاستخدام والأداء.",
+        "حوّلت منطق الأعمال وتصاميم تجربة المستخدم إلى كود واجهات جاهز للإنتاج ضمن فرق تسليم Agile."
+      ]
+    },
+    {
+      "Tab": "Capital Link Globe",
+      "Title": "مطوّر واجهات أمامية",
+      "Date": "يناير ٢٠١٦ – يناير ٢٠١٨ · القاهرة، مصر",
+      "Description": [
+        "بنيت تطبيقات ويب موجّهة للمستخدمين وصُنت خصائص الواجهة وفق المتطلبات الوظيفية للعملاء."
+      ]
+    }
+  ],
+  "FeatureProjects.Title": "أعمال مختارة",
+  "FeatureProjects.Label": "دراسة حالة",
+  "FeatureProjects.RoleLabel": "الدور",
+  "FeatureProjects.ChallengeLabel": "التحدي الهندسي",
+  "FeatureProjects.Projects": [
+    {
+      "Title": "منصة Alto NX",
+      "Context": "Netsync · قائد تقني للواجهات الأمامية",
+      "Description": "مستودع Nx يضم عدة تطبيقات Angular خلف مكتبات مشتركة للواجهات والأدوات ومنطق الأعمال الأساسي. صمّمت هيكلة مساحة العمل وأسّست نظام التصميم فوق PrimeNG و Tailwind CSS و AG Grid Enterprise، موثّقًا عبر Storybook.",
+      "Challenge": "الحفاظ على استقرار البناء ووضوح حدود المكتبات بينما تسلّم عدة فرق داخل مساحة عمل واحدة — مع نقل المنصة عبر تحديثات إصدارات Angular دون تعطيل التسليم. تقوم المعمارية على المكوّنات المستقلة و OnPush و Signals / SignalStore، وعلى GraphQL و Docker و Husky في جانب التسليم.",
+      "Technologies": [
+        "Nx",
+        "Angular",
+        "TypeScript",
+        "Signals / SignalStore",
+        "GraphQL",
+        "PrimeNG",
+        "AG Grid Enterprise",
+        "Tailwind CSS",
+        "Storybook",
+        "Docker"
+      ]
+    },
+    {
+      "Title": "منصة Olympus المؤسسية",
+      "Context": "Netsync · قائد تقني للواجهات الأمامية",
+      "Description": "تدفقات واجهات مؤسسية معقّدة للخطوط الزمنية والطوابق وتصوير البيانات المهيكلة، مدعومة بإدارة حالة قابلة للتوسّع.",
+      "Challenge": "كان على مكوّنات إدارة الخطوط الزمنية والطوابق أن تعمل كمكوّنات قابلة لإعادة الاستخدام عبر شاشات متعددة، لكل منها سياق عمل مختلف يقود نموذج التفاعل نفسه — بحيث تبقى المكوّنات محايدة تجاه السياق بينما تبقى الحالة المحيطة محدودة النطاق.",
+      "Technologies": [
+        "Angular",
+        "TypeScript",
+        "Signals / SignalStore",
+        "RxJS",
+        "تصوير البيانات"
+      ]
+    },
+    {
+      "Title": "نظام التصميم والمكتبات المشتركة",
+      "Context": "Netsync · قائد تقني للواجهات الأمامية",
+      "Description": "أسس واجهات موحّدة تُستخدم عبر المنتجات: أغلفة حول PrimeNG، ومكوّنات نماذج ديناميكية مبنية على ControlValueAccessor، ومكوّنات خطوط زمنية مخصّصة، وأنماط جداول قابلة لإعادة الاستخدام مع ترقيم وتصفية من جهة الخادم — جميعها موثّقة ومطوّرة عبر Storybook.",
+      "Challenge": "بناء مكوّنات نماذج وجداول عامة بما يكفي لتتبنّاها فرق كثيرة دون نسخها، مع إبقاء الواجهة البرمجية العامة صغيرة بما يكفي للصيانة.",
+      "Technologies": [
+        "Angular",
+        "أنظمة التصميم",
+        "ControlValueAccessor",
+        "PrimeNG",
+        "AG Grid Enterprise",
+        "Storybook",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "Title": "Alto / Designer / Signage — معمارية متعدّدة التطبيقات",
+      "Context": "Netsync · قائد تقني للواجهات الأمامية",
+      "Description": "تكامل متعدّد التطبيقات بين منصات Alto و Designer و Signage مع الحفاظ على حدود البيانات والأنظمة الخلفية بينها.",
+      "Challenge": "هندسة إطلاق متعدّد البيئات بحيث تعمل نسخة واحدة من التطبيق عبر منتجات وبيئات واجهات برمجية مختلفة — دون بناء منفصل لكل منتج أو تفريع للإعدادات.",
+      "Technologies": [
+        "Angular",
+        "Micro Frontends",
+        "Nx",
+        "معمارية متعدّدة البيئات"
+      ]
+    },
+    {
+      "Title": "Geidea POS",
+      "Context": "Geidea · مطوّر واجهات أمامية أول",
+      "Description": "منصة نقاط بيع مؤسسية مع تقارير آنية وتتبّع للمعاملات، مبنية كواجهة معيارية باستخدام Angular و NgRx والواجهات المصغّرة.",
+      "Challenge": "كان على تدفقات المعاملات المعقّدة أن تبقى ضمن حدود واضحة لنطاقات الخصائص، مع ضبط إدارة الحالة والتصيير للاستخدام واسع النطاق.",
+      "Technologies": [
+        "Angular",
+        "NgRx",
+        "Micro Frontends",
+        "TypeScript",
+        ".NET Core"
+      ]
+    },
+    {
+      "Title": "WinjiGo LMS",
+      "Context": "ITWORX Education · مطوّر واجهات أمامية",
+      "Description": "نظام إدارة تعلّم يخدم وزارة التربية والتعليم في الإمارات، ويغطي بوّابات إدارة الطلاب وأولياء الأمور والامتحانات.",
+      "Challenge": "تسليم بوّابات Angular جديدة جنبًا إلى جنب مع قاعدة كود قائمة على AngularJS و ASP.NET Core، وكلاهما يعمل في بيئة الإنتاج.",
+      "Technologies": [
+        "Angular",
+        "AngularJS",
+        "ASP.NET Core"
+      ],
+      "demoLink": "https://learn.winjigo.com/account/login",
+      "imgs": [
+        "assets/images/WinjiGo/1.png",
+        "assets/images/WinjiGo/2.png",
+        "assets/images/WinjiGo/3.png",
+        "assets/images/WinjiGo/4.png",
+        "assets/images/WinjiGo/5.png",
+        "assets/images/WinjiGo/6.png",
+        "assets/images/WinjiGo/7.png",
+        "assets/images/WinjiGo/8.png",
+        "assets/images/WinjiGo/9.png",
+        "assets/images/WinjiGo/10.png",
+        "assets/images/WinjiGo/11.png",
+        "assets/images/WinjiGo/12.png",
+        "assets/images/WinjiGo/13.png",
+        "assets/images/WinjiGo/14.png",
+        "assets/images/WinjiGo/15.png"
+      ]
+    },
+    {
+      "Title": "ميقاتي",
+      "Context": "MEITS Technology · مطوّر واجهات أمامية",
+      "Description": "تطبيق جوّال متعدّد المنصات لإدارة النقل والجداول الزمنية للحج والعمرة.",
+      "Challenge": "واجهات متجاوبة وسلوك جاهز للعمل دون اتصال باستخدام Ionic و Angular، لمستخدمين يواجهون انقطاعًا في الاتصال أثناء التنقّل.",
+      "Technologies": [
+        "Ionic",
+        "Angular",
+        "NestJS"
+      ],
+      "imgs": [
+        "assets/images/Meqati/1.png",
+        "assets/images/Meqati/2.png",
+        "assets/images/Meqati/3.png",
+        "assets/images/Meqati/4.png",
+        "assets/images/Meqati/5.png",
+        "assets/images/Meqati/6.png",
+        "assets/images/Meqati/7.png",
+        "assets/images/Meqati/8.png",
+        "assets/images/Meqati/9.png",
+        "assets/images/Meqati/10.png",
+        "assets/images/Meqati/11.png"
+      ]
+    },
+    {
+      "Title": "Health Heroes",
+      "Context": "MEITS Technology · مطوّر واجهات أمامية",
+      "Description": "تطبيق متعدّد المنصات لإدارة الصحة وتتبّع الخدمات الوزارية.",
+      "Challenge": "تقديم تجربة مستخدم متّسقة عبر iOS و Android من قاعدة كود واحدة بـ Ionic و Angular.",
+      "Technologies": [
+        "Ionic",
+        "Angular",
+        "Node.js"
+      ],
+      "imgs": [
+        "assets/images/HealthHeroes/1.png",
+        "assets/images/HealthHeroes/2.png",
+        "assets/images/HealthHeroes/3.png",
+        "assets/images/HealthHeroes/4.png",
+        "assets/images/HealthHeroes/5.png"
+      ]
+    }
+  ],
+  "OtherProjects.Title": "مشاريع أخرى",
+  "OtherProjects.Subtitle": "مستودعات عامة وتجارب أصغر حجمًا.",
+  "OtherProjects.Projects": [],
+  "Contact.Pretitle": "الخطوة التالية",
+  "Contact.Title": "تواصل معي",
+  "Contact.Content": "أرحّب بالحديث عن فرص في هندسة الواجهات الأمامية على مستوى أول أو قيادة تقنية أو معمارية الواجهات. إن كنت تبحث عن مهندس، أو ترغب في مناقشة مشكلة معمارية في Angular، فبريدي مفتوح.",
+  "Contact.Btn": "أرسل رسالة",
+  "Footer.Built": "صمّمه وبناه أحمد مباشر",
+  "Footer.BasedOn": "مبني على تصميم مفتوح المصدر لـ Brittany Chiang، مقتبس من نسخة Angular لـ Andrés Hernández.",
+  "Archive.Title": "أرشيف المشاريع",
+  "Archive.Subtitle": "قائمة أوسع بما عملت عليه.",
+  "Archive.Year": "السنة",
+  "Archive.Project": "المشروع",
+  "Archive.MadeAt": "الجهة",
+  "Archive.BuiltWith": "التقنيات",
+  "Archive.Link": "الرابط",
+  "Archive.Private": "خاص",
+  "Archive.Items": [
+    {
+      "Year": "٢٠٢٣–الآن",
+      "Title": "منصة Alto NX",
+      "Company": "Netsync",
+      "Technologies": [
+        "Nx",
+        "Angular",
+        "Signals",
+        "GraphQL",
+        "Docker"
+      ]
+    },
+    {
+      "Year": "٢٠٢٣–الآن",
+      "Title": "منصة Olympus المؤسسية",
+      "Company": "Netsync",
+      "Technologies": [
+        "Angular",
+        "SignalStore",
+        "RxJS"
+      ]
+    },
+    {
+      "Year": "٢٠٢٣–الآن",
+      "Title": "نظام التصميم والمكتبات المشتركة",
+      "Company": "Netsync",
+      "Technologies": [
+        "Angular",
+        "PrimeNG",
+        "AG Grid",
+        "Storybook"
+      ]
+    },
+    {
+      "Year": "٢٠٢٣–الآن",
+      "Title": "تكامل Alto / Designer / Signage",
+      "Company": "Netsync",
+      "Technologies": [
+        "Micro Frontends",
+        "Nx",
+        "Angular"
+      ]
+    },
+    {
+      "Year": "٢٠٢٢–٢٠٢٣",
+      "Title": "Geidea POS",
+      "Company": "Geidea",
+      "Technologies": [
+        "Angular",
+        "NgRx",
+        "Micro Frontends",
+        ".NET Core"
+      ]
+    },
+    {
+      "Year": "٢٠٢٢",
+      "Title": "إدارة الخدمات اللوجستية والنقل",
+      "Company": "Softec Technologies",
+      "Technologies": [
+        "Angular",
+        "Angular Material"
+      ]
+    },
+    {
+      "Year": "٢٠٢١–٢٠٢٢",
+      "Title": "WinjiGo LMS",
+      "Company": "ITWORX Education",
+      "Technologies": [
+        "Angular",
+        "AngularJS",
+        "ASP.NET Core"
+      ],
+      "link": "https://learn.winjigo.com/account/login"
+    },
+    {
+      "Year": "٢٠١٩–٢٠٢١",
+      "Title": "ميقاتي",
+      "Company": "MEITS Technology",
+      "Technologies": [
+        "Ionic",
+        "Angular",
+        "NestJS"
+      ]
+    },
+    {
+      "Year": "٢٠١٩–٢٠٢١",
+      "Title": "Health Heroes",
+      "Company": "MEITS Technology",
+      "Technologies": [
+        "Ionic",
+        "Angular",
+        "Node.js"
+      ]
+    },
+    {
+      "Year": "٢٠١٩–٢٠٢١",
+      "Title": "تتبّع الحافلات",
+      "Company": "MEITS Technology",
+      "Technologies": [
+        "Angular",
+        "NestJS",
+        "خرائط جوجل"
+      ],
+      "link": "http://allenapp.com/auth/login"
+    }
+  ]
+}

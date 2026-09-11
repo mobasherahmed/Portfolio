@@ -203,3 +203,68 @@ a{
 
 
 
+
+/* ── Accessibility ─────────────────────────────────────────────────────── */
+
+/* The template relied on hover alone; keyboard users had no visible focus. */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #64ffda;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ── RTL ───────────────────────────────────────────────────────────────────
+   dir="rtl" is set on <html> by LanguageService. Latin technology names stay
+   LTR inside Arabic text so "Angular 18" and "AG Grid" don't reorder. */
+
+[dir="rtl"] {
+  text-align: right;
+
+  .section-title,
+  .big-title,
+  .big-subtitle,
+  .about-description,
+  .job-description,
+  .title-tab-content,
+  .job-time {
+    text-align: right;
+  }
+
+  .skills-list { padding-right: 0; }
+
+  .footer-left-bar  { left: auto; right: 40px; }
+  .footer-right-bar { right: auto; left: 40px; }
+
+  .n-section-title,
+  .nav-number { margin-left: 0.4rem; margin-right: 0; }
+
+  .technology,
+  .nav-number,
+  .n-section-title,
+  code,
+  .code-font {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+  }
+
+  .archive-table { text-align: right; }
+}

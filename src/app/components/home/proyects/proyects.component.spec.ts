@@ -1,4 +1,5 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { configureComponentTest } from 'src/testing/test-setup';
 
 import { ProyectsComponent } from './proyects.component';
 
@@ -6,14 +7,9 @@ describe('ProyectsComponent', () => {
   let component: ProyectsComponent;
   let fixture: ComponentFixture<ProyectsComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ProyectsComponent ]
-    })
-    .compileComponents();
-  }));
+  beforeEach(async () => {
+    await configureComponentTest([ProyectsComponent]);
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ProyectsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

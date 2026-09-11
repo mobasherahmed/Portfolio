@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { configureServiceTest } from 'src/testing/test-setup';
 
 import { AnalyticsService } from './analytics.service';
 
@@ -6,7 +7,7 @@ describe('AnalyticsService', () => {
   let service: AnalyticsService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    configureServiceTest();
     service = TestBed.inject(AnalyticsService);
   });
 

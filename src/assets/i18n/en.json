@@ -1,138 +1,197 @@
 {
-  "Header.Item1": "About me",
+  "Meta.Title": "Ahmed Mobasher | Senior Frontend Engineer & Frontend Tech Lead",
+  "Meta.Description": "Senior Frontend Engineer and Frontend Tech Lead with 9+ years building large-scale Angular applications — Nx monorepos, micro frontends, design systems and enterprise UI architecture.",
+  "Header.Item1": "About",
   "Header.Item2": "Experience",
-  "Header.Item3": "Projects",
+  "Header.Item3": "Work",
   "Header.Item4": "Contact",
   "Header.cvBtn": "Resume",
-  "Header.cvName": "AhmedMobasher_Resume.pdf",
-
-  "Banner.Pretitle": "Hello! My name is",
-  "Banner.Description": "A passionate frontend developer with <span class='underline'>+4 year of experience</span> in web development. A fast and efficient learner with deep understanding and a passion for software development.",
+  "Header.cvName": "Ahmed-Mobasher-CV.pdf",
+  "Header.Skip": "Skip to main content",
+  "Header.LanguageLabel": "Select language",
+  "Banner.Pretitle": "Hi, my name is",
+  "Banner.Name": "Ahmed Mobasher.",
+  "Banner.Role": "I build and lead frontend architecture.",
+  "Banner.Description": "Senior Frontend Engineer and Frontend Tech Lead with <span class='underline'>9+ years of experience</span> building scalable, high-performance web applications. I work primarily in <span class='underline'>Angular</span> and <span class='underline'>TypeScript</span>, designing <span class='underline'>Nx monorepos</span>, <span class='underline'>micro frontends</span> and <span class='underline'>design systems</span> that multiple product teams build on.",
   "Banner.ActionBtn": "Download Resume",
-
   "AboutMe.Title": "About me",
   "AboutMe.Paragraphs": [
-    "Hello! My name is <span class='underline'> Ahmed Mobasher </span> graduated from faculty of computers & information zagazig university in 2017, After I had finished my militry period in 2019 I have started my career as a frontend developer at <span class='underline'> Meits Techonlogy </span> .",
-    "Fast-forward to today, and I’ve had a good jounry while working at <span class='underline'> ITWORX Education </span> , <span class='underline'> Softec Techologies </span> where I learned a lot about <span class='underline'> Agile Methodology  </span> and how to write a <span class='underline'> Clean Code  </span> and building many websites and projects to practice our knowledge ",
-    "Here are a few technologies I’ve been working with recently:"
+    "I'm a frontend engineer based in Cairo, with 9+ years spent on large, long-lived products rather than one-off builds. I studied Computer Science at <span class='underline'>Zagazig University</span> and started my career in 2019 building web and hybrid mobile applications.",
+    "Since June 2023 I've been at <span class='underline'>Netsync</span> (Boston, remote), and since June 2025 I've been acting as <span class='underline'>Frontend Tech Lead</span> — owning frontend architecture and engineering standards across delivery teams, and directly managing a team of six frontend developers.",
+    "Most of my work sits where architecture meets developer experience: structuring <span class='underline'>Nx monorepos</span> and <span class='underline'>micro frontends</span>, designing shared component libraries other teams depend on, and getting state management right with <span class='underline'>Signals, SignalStore, RxJS and NgRx</span>. I also use <span class='underline'>Claude, Cursor and GitHub Copilot</span> daily — as tools that speed up implementation, refactoring and test generation, under the same review standards as any other code.",
+    "Technologies I work with most:"
   ],
-
-  "Experience.Title": "Experience",
+  "AboutMe.Skills": [
+    "Angular",
+    "TypeScript",
+    "RxJS",
+    "Signals & SignalStore",
+    "NgRx",
+    "Nx Monorepos",
+    "Micro Frontends",
+    "Design Systems",
+    "PrimeNG",
+    "AG Grid Enterprise",
+    "Tailwind CSS",
+    "GraphQL",
+    "Cypress & Playwright",
+    "Storybook",
+    "Docker & CI/CD"
+  ],
+  "AboutMe.ImageAlt": "Portrait of Ahmed Mobasher",
+  "Experience.Title": "Where I've worked",
   "Experience.Jobs": [
     {
-      "Tab": "Meits Technology",
-      "Title": "Frontend Developer",
-      "Date": "April 2019 - Jun 2020",
+      "Tab": "Netsync",
+      "Title": "Frontend Tech Lead / Senior Frontend Engineer",
+      "Date": "Jun 2023 – Present · Boston, US (Remote)",
       "Description": [
-        "Managed full-cycle design tasks, handling phases from conception to completion while maintaining guidelines throughout.",
-        "Developed designs to meet specific requirements such as quick-loading sites with particular layouts.",
-        "Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.",
-        "Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources."
-      ]
-    },
-    {
-      "Tab": "ITWORX Education",
-      "Title": "Frontend Developer",
-      "Date": "Jul 2020 - Jun 2021",
-      "Description": [
-        "Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.",
-        "Managed full-cycle design tasks, handling phases from conception to completion while maintaining guidelines throughout.",
-        "Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.",
-        "Verified all web-based products fulfilled prescribed project needs through direct interaction with stakeholders.",
-        "Pinpointed user experience issues to devise targeted suggestions for improving user experience.",
-        "Developed designs to meet specific requirements such as quick-loading sites with particular layouts."
-      ]
-    },
-    {
-      "Tab": "Softec International",
-      "Title": "Senior Frontend Developer",
-      "Date": "Jun 2021 - April 2022",
-      "Description": [
-        "Developed designs to meet specific requirements such as quick-loading sites with particular layouts.",
-        "Managed full-cycle design tasks, handling phases from conception to completion while maintaining guidelines throughout.",
-        "Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.",
-        "Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.",
-        "Verified all web-based products fulfilled prescribed project needs through direct interaction with stakeholders.",
-        "Pinpointed user experience issues to devise targeted suggestions for improving user experience."
-      ]
-    },
-    {
-      "Tab": "Exalt Technologies",
-      "Title": "Senior Frontend Developer",
-      "Date": "April 2022 - Present ",
-      "Description": [
-        "Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.",
-        "Managed full-cycle design tasks, handling phases from conception to completion while maintaining guidelines throughout.",
-        "Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.",
-        "Verified all web-based products fulfilled prescribed project needs through direct interaction with stakeholders.",
-        "Pinpointed user experience issues to devise targeted suggestions for improving user experience.",
-        "Verified all web-based products fulfilled prescribed project needs through direct interaction with stakeholders."
-      ]
-    },
-    {
-      "Tab": "Peaxy,Inc",
-      "Title": "Senior Frontend Developer",
-      "Date": "April 2022 - Present ",
-      "Description": [
-        "Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.",
-        "Managed full-cycle design tasks, handling phases from conception to completion while maintaining guidelines throughout.",
-        "Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.",
-        "Verified all web-based products fulfilled prescribed project needs through direct interaction with stakeholders.",
-        "Pinpointed user experience issues to devise targeted suggestions for improving user experience."
+        "Acting as Frontend Tech Lead since Jun 2025 — technical ownership of frontend architecture, engineering standards and technical decision-making across product delivery teams, directly managing a team of 6 frontend developers.",
+        "Lead end-to-end delivery from requirement breakdown and solution design through code review, implementation and deployment.",
+        "Architect and drive the implementation of micro frontends and Nx monorepos to structure scalable, maintainable enterprise applications.",
+        "Design reusable design systems and shared component libraries — dynamic forms, timeline UI primitives, enterprise grids — to keep UX consistent and accelerate cross-team delivery.",
+        "Architect Signal / SignalStore state management alongside RxJS and NgRx: feature-scoped stores, request deduplication, and API caching for dropdown and reference data to eliminate unnecessary re-fetching on component lifecycle.",
+        "Troubleshoot complex Nx dependency, build and lint issues; diagnose Node.js heap limits in large builds; configure SSR; set up Docker + Nginx deployments; resolve Cloud Run mixed-content issues; manage multi-backend endpoint environments.",
+        "Integrate Claude, Cursor and GitHub Copilot into daily engineering workflows for implementation, refactoring, debugging, test generation and architecture exploration, while holding the same quality bar."
       ]
     },
     {
       "Tab": "Geidea",
       "Title": "Senior Frontend Developer",
-      "Date": "Sep 2022 - Present ",
+      "Date": "Sep 2022 – Aug 2023 · Riyadh, Saudi Arabia",
       "Description": [
-        "Verified all web-based products fulfilled prescribed project needs through direct interaction with stakeholders.",
-        "Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.",
-        "Managed full-cycle design tasks, handling phases from conception to completion while maintaining guidelines throughout.",
-        "Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.",
-        "Pinpointed user experience issues to devise targeted suggestions for improving user experience."
+        "Built an enterprise Point of Sale platform with Angular, NgRx and micro frontends inside a modular frontend architecture.",
+        "Developed complex transactional business workflows and reusable frontend components while keeping clear feature-domain boundaries.",
+        "Optimized state management and rendering performance across large-scale POS workflows.",
+        "Delivered features end to end — requirement analysis, development, testing and release — within Agile teams."
       ]
     },
     {
-      "Tab": "Capital Link",
-      "Title": "Senior Frontend Developer (Part-Time)",
-      "Date": "Jul 2021 - Present ",
+      "Tab": "Softec",
+      "Title": "Senior Frontend Developer",
+      "Date": "Mar 2022 – Sep 2022 · Maadi, Cairo",
       "Description": [
-        "Managed full-cycle design tasks, handling phases from conception to completion while maintaining guidelines throughout.",
-        "Collaborated with stakeholders during development processes to confirm creative proposals and design best practices.",
-        "Verified all web-based products fulfilled prescribed project needs through direct interaction with stakeholders.",
-        "Pinpointed user experience issues to devise targeted suggestions for improving user experience."
+        "Owned frontend feature implementation from functional requirements through release for data-intensive logistics and transport management applications.",
+        "Used Angular Material, modern CSS and responsive UI patterns to deliver accessible, maintainable interfaces.",
+        "Worked with cross-functional product teams to resolve technical bottlenecks and improve application usability."
+      ]
+    },
+    {
+      "Tab": "ITWORX Education",
+      "Title": "Frontend Developer",
+      "Date": "Apr 2021 – Mar 2022 · Nasr City, Cairo",
+      "Description": [
+        "Contributed to WinjiGo, a Learning Management System serving the UAE Ministry of Education.",
+        "Developed student, parent and examination management portals using Angular, AngularJS and ASP.NET Core.",
+        "Took part in end-to-end feature development, code reviews and sprint planning in Agile setups."
+      ]
+    },
+    {
+      "Tab": "MEITS",
+      "Title": "Frontend Developer",
+      "Date": "Apr 2019 – Mar 2021 · Maadi, Cairo",
+      "Description": [
+        "Developed responsive web and hybrid mobile applications using Ionic and Angular Material, focused on usability and performance.",
+        "Translated business logic and UI/UX designs into production-ready frontend code within Agile delivery teams."
+      ]
+    },
+    {
+      "Tab": "Capital Link Globe",
+      "Title": "Frontend Developer",
+      "Date": "Jan 2016 – Jan 2018 · Cairo, Egypt",
+      "Description": [
+        "Built user-facing web applications and maintained frontend features against client functional requirements."
       ]
     }
   ],
-
-  "FeatureProjects.Title": "My projects",
-  "FeatureProjects.Label": "Featured Project",
+  "FeatureProjects.Title": "Selected work",
+  "FeatureProjects.Label": "Case study",
+  "FeatureProjects.RoleLabel": "Role",
+  "FeatureProjects.ChallengeLabel": "Engineering challenge",
   "FeatureProjects.Projects": [
     {
-      "Title": "Health Heroes",
-      "Description": "Fully functioned Application to assist Organizations for sharing Knowledge, Events, Media, News & Communicate Members under one Umbrella. developed using <span class='underline'>Angular</span>,<span class='underline'>Nodejs</span>, and <span class='underline'>Ionic 4</span>.",
-      "imgs": [
-        "assets/images/HealthHeroes/1.webp",
-        "assets/images/HealthHeroes/2.webp",
-        "assets/images/HealthHeroes/3.webp",
-        "assets/images/HealthHeroes/4.webp",
-        "assets/images/HealthHeroes/1.png",
-        "assets/images/HealthHeroes/2.png",
-        "assets/images/HealthHeroes/3.png",
-        "assets/images/HealthHeroes/4.png"
-      ],
-      "ghLink": "https://play.google.com/store/apps/details?id=com.meitstech.HH",
-      "demoLink": "https://meitstech.io:9999/",
+      "Title": "Alto NX Platform",
+      "Context": "Netsync · Frontend Tech Lead",
+      "Description": "An Nx monorepo hosting multiple Angular applications behind shared libraries for UI, utilities and core business logic. I architected the workspace structure and established the design system on top of PrimeNG, Tailwind CSS and AG Grid Enterprise, documented in Storybook.",
+      "Challenge": "Keeping build stability and clear library boundaries while several teams ship into one workspace — and carrying the platform through Angular version modernizations without stalling delivery. Standalone components, OnPush and Signals / SignalStore underpin the runtime architecture; GraphQL, Docker and Husky the delivery side.",
       "Technologies": [
-        "Ionic4",
+        "Nx",
         "Angular",
-        "Nodejs"
+        "TypeScript",
+        "Signals / SignalStore",
+        "GraphQL",
+        "PrimeNG",
+        "AG Grid Enterprise",
+        "Tailwind CSS",
+        "Storybook",
+        "Docker"
       ]
     },
     {
-      "Title": "WinjiGo",
-      "Description": "Learning Management System. developed using <span class='underline'>Angular</span>,<span class='underline'>Asp.net core</span>, and <span class='underline'>Angularjs</span>.",
+      "Title": "Olympus Enterprise Frontend Platform",
+      "Context": "Netsync · Frontend Tech Lead",
+      "Description": "Complex enterprise UI workflows for Timelines, Floors and structured data visualization, backed by scalable state management.",
+      "Challenge": "Timeline and Floor management had to work as reusable components across multiple screens, each with a different business context driving the same interaction model — so the components needed to stay context-agnostic while the surrounding state stayed feature-scoped.",
+      "Technologies": [
+        "Angular",
+        "TypeScript",
+        "Signals / SignalStore",
+        "RxJS",
+        "Data Visualization"
+      ]
+    },
+    {
+      "Title": "Frontend Design System & Shared Libraries",
+      "Context": "Netsync · Frontend Tech Lead",
+      "Description": "Standardized UI foundations consumed across products: PrimeNG wrappers, dynamic form components built on ControlValueAccessor, custom Timeline primitives, and reusable table/data-grid patterns with server-side pagination and filtering — all documented and developed through Storybook.",
+      "Challenge": "Building form and grid primitives general enough for many teams to adopt without forking them, while keeping the public API small enough to stay maintainable.",
+      "Technologies": [
+        "Angular",
+        "Design Systems",
+        "ControlValueAccessor",
+        "PrimeNG",
+        "AG Grid Enterprise",
+        "Storybook",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "Title": "Alto / Designer / Signage — Multi-Application Architecture",
+      "Context": "Netsync · Frontend Tech Lead",
+      "Description": "Multi-app integration across the Alto, Designer and Signage platforms while preserving backend and data boundaries between them.",
+      "Challenge": "Engineering multi-environment launching so a single application version runs across distinct products and API environments — no per-product build, no forked configuration.",
+      "Technologies": [
+        "Angular",
+        "Micro Frontends",
+        "Nx",
+        "Multi-Environment Architecture"
+      ]
+    },
+    {
+      "Title": "Geidea POS",
+      "Context": "Geidea · Senior Frontend Developer",
+      "Description": "Enterprise Point of Sale platform with real-time reporting and transaction tracking, built as a modular frontend with Angular, NgRx and micro frontends.",
+      "Challenge": "Complex transactional workflows had to stay inside clear feature-domain boundaries, with state management and rendering tuned for large-scale POS usage.",
+      "Technologies": [
+        "Angular",
+        "NgRx",
+        "Micro Frontends",
+        "TypeScript",
+        ".NET Core"
+      ],
+      "demoLink": ""
+    },
+    {
+      "Title": "WinjiGo LMS",
+      "Context": "ITWORX Education · Frontend Developer",
+      "Description": "Learning Management System serving the UAE Ministry of Education, covering student, parent and examination management portals.",
+      "Challenge": "Delivering new Angular portals alongside an existing AngularJS and ASP.NET Core codebase, with both running in production.",
+      "Technologies": [
+        "Angular",
+        "AngularJS",
+        "ASP.NET Core"
+      ],
+      "demoLink": "https://learn.winjigo.com/account/login",
       "imgs": [
         "assets/images/WinjiGo/1.png",
         "assets/images/WinjiGo/2.png",
@@ -149,17 +208,18 @@
         "assets/images/WinjiGo/13.png",
         "assets/images/WinjiGo/14.png",
         "assets/images/WinjiGo/15.png"
-      ],
-      "demoLink": "https://learn.winjigo.com/account/login",
-      "Technologies": [
-        "Angular",
-        "Angularjs",
-        "Asp.net core"
       ]
     },
     {
       "Title": "Meqati",
-      "Description": "Umrah & Hajj from inside Saudia Arabia. developed using <span class='underline'>Angular</span>,<span class='underline'>NestJs</span>, and <span class='underline'>Ionic4</span>.",
+      "Context": "MEITS Technology · Frontend Developer",
+      "Description": "Cross-platform mobile application for Hajj and Umrah transportation and schedule management.",
+      "Challenge": "Responsive interfaces and offline-ready behaviour on Ionic and Angular, for users with intermittent connectivity during pilgrimage travel.",
+      "Technologies": [
+        "Ionic",
+        "Angular",
+        "NestJS"
+      ],
       "imgs": [
         "assets/images/Meqati/1.png",
         "assets/images/Meqati/2.png",
@@ -172,88 +232,149 @@
         "assets/images/Meqati/9.png",
         "assets/images/Meqati/10.png",
         "assets/images/Meqati/11.png"
-      ],
-      "demoLink": "https://meitstech.io:8888/",
-      "Technologies": [
-        "Angular",
-        "Ionic4",
-        "NestJs"
       ]
     },
     {
-      "Title": "Bus Tracking",
-      "Description": "Bus Tracking App Integrated with Google Maps. developed using <span class='underline'>Angular</span>,<span class='underline'>NestJs</span>.",
+      "Title": "Health Heroes",
+      "Context": "MEITS Technology · Frontend Developer",
+      "Description": "Cross-platform application for health management and Ministry services tracking.",
+      "Challenge": "Delivering one consistent user experience across iOS and Android from a single Ionic and Angular codebase.",
+      "Technologies": [
+        "Ionic",
+        "Angular",
+        "Node.js"
+      ],
       "imgs": [
-        "assets/images/BusTracking/1.png",
-        "assets/images/BusTracking/2.png",
-        "assets/images/BusTracking/3.png",
-        "assets/images/BusTracking/4.png",
-        "assets/images/BusTracking/5.png",
-        "assets/images/BusTracking/6.png",
-        "assets/images/BusTracking/7.png",
-        "assets/images/BusTracking/8.png",
-        "assets/images/BusTracking/9.png",
-        "assets/images/BusTracking/10.png",
-        "assets/images/BusTracking/11.png",
-        "assets/images/BusTracking/12.png",
-        "assets/images/BusTracking/13.png"
-      ],
-      "demoLink": "http://allenapp.com/auth/login",
-      "ghLink": "http://admin.allenapp.com/login",
-      "Technologies": [
-        "Angular",
-        "NestJs"
+        "assets/images/HealthHeroes/1.png",
+        "assets/images/HealthHeroes/2.png",
+        "assets/images/HealthHeroes/3.png",
+        "assets/images/HealthHeroes/4.png",
+        "assets/images/HealthHeroes/5.png"
       ]
     }
   ],
-
-  "OtherProjects.Title": "More projects",
-  "OtherProjects.Projects": [
+  "OtherProjects.Title": "Other projects",
+  "OtherProjects.Subtitle": "Smaller public repositories and experiments.",
+  "OtherProjects.Projects": [],
+  "Contact.Pretitle": "What's next",
+  "Contact.Title": "Get in touch",
+  "Contact.Content": "I'm open to conversations about Senior Frontend, Frontend Tech Lead and frontend architecture roles. If you're hiring or want to talk through an Angular architecture problem, my inbox is open.",
+  "Contact.Btn": "Say hello",
+  "Footer.Built": "Designed and built by Ahmed Mobasher",
+  "Footer.BasedOn": "Based on an open-source design by Brittany Chiang, adapted from an Angular port by Andrés Hernández.",
+  "Archive.Title": "Project archive",
+  "Archive.Subtitle": "A fuller list of what I have worked on.",
+  "Archive.Year": "Year",
+  "Archive.Project": "Project",
+  "Archive.MadeAt": "Made at",
+  "Archive.BuiltWith": "Built with",
+  "Archive.Link": "Link",
+  "Archive.Private": "Private",
+  "Archive.Items": [
     {
-      "Title": "simple-HIS-system",
-      "Description": "project performs various functions like Addition, removal, and update in the patient.",
-      "ghLink": "https://github.com/AhmedMobasher/simple-HIS-system",
-      "demoLink": "https://AhmedMobasher.github.io/simple-HIS-system/",
-      "Technologies": ["javaScript", "webpack", "knockout js", "Bootstrap"]
+      "Year": "2023–now",
+      "Title": "Alto NX Platform",
+      "Company": "Netsync",
+      "Technologies": [
+        "Nx",
+        "Angular",
+        "Signals",
+        "GraphQL",
+        "Docker"
+      ]
     },
     {
-      "Title": "js-warDeckGame",
-      "Description": "card game performs various functions like draw cards, shuffle, compare the card then checkWinner .",
-      "ghLink": "https://github.com/AhmedMobasher/js-warDeckGame",
-      "demoLink": "https://war-deck.netlify.app/",
-      "Technologies": [ "javaScript", "CSS", "HTML"]
+      "Year": "2023–now",
+      "Title": "Olympus Enterprise Frontend Platform",
+      "Company": "Netsync",
+      "Technologies": [
+        "Angular",
+        "SignalStore",
+        "RxJS"
+      ]
     },
     {
-      "Title": "calculator",
-      "Description": "OOP calculator performs basic calculation functions.",
-      "ghLink": "https://github.com/AhmedMobasher/calculator",
-      "demoLink": "https://js-calculater.netlify.app/",
-      "Technologies": ["javaScript", "OOP", "CSS", "HTML"]
+      "Year": "2023–now",
+      "Title": "Frontend Design System & Shared Libraries",
+      "Company": "Netsync",
+      "Technologies": [
+        "Angular",
+        "PrimeNG",
+        "AG Grid",
+        "Storybook"
+      ]
     },
     {
-      "Title": "slider",
-      "Description": "pure javaScript slider with get Prevues and next slide functionality.",
-      "ghLink": "https://github.com/AhmedMobasher/pureSlider",
-      "demoLink": "https://pureslider.netlify.app",
-      "Technologies": ["javaScript", "CSS", "Git"]
+      "Year": "2023–now",
+      "Title": "Alto / Designer / Signage Integration",
+      "Company": "Netsync",
+      "Technologies": [
+        "Micro Frontends",
+        "Nx",
+        "Angular"
+      ]
     },
     {
-      "Title": "iPortfolio Clone",
-      "Description": "bootstrap template with 6 servals sections and pretty design.",
-      "ghLink": "https://github.com/AhmedMobasher/iPortfolioClone",
-      "demoLink": "https://iportfolioclone.netlify.app",
-      "Technologies": ["bootstrap", "CSS", "HTML"]
+      "Year": "2022–2023",
+      "Title": "Geidea POS",
+      "Company": "Geidea",
+      "Technologies": [
+        "Angular",
+        "NgRx",
+        "Micro Frontends",
+        ".NET Core"
+      ]
     },
     {
-      "Title": "bezel clone",
-      "Description": "bootstrap template with 6 servals sections and pretty design.",
-      "ghLink": "https://github.com/AhmedMobasher/bootstrapExam",
-      "demoLink": "https://bootstrap7template.netlify.app/",
-      "Technologies": ["bootstrap", "CSS", "HTML"]
+      "Year": "2022",
+      "Title": "Logistics & Transport Management",
+      "Company": "Softec Technologies",
+      "Technologies": [
+        "Angular",
+        "Angular Material"
+      ]
+    },
+    {
+      "Year": "2021–2022",
+      "Title": "WinjiGo LMS",
+      "Company": "ITWORX Education",
+      "Technologies": [
+        "Angular",
+        "AngularJS",
+        "ASP.NET Core"
+      ],
+      "link": "https://learn.winjigo.com/account/login"
+    },
+    {
+      "Year": "2019–2021",
+      "Title": "Meqati",
+      "Company": "MEITS Technology",
+      "Technologies": [
+        "Ionic",
+        "Angular",
+        "NestJS"
+      ]
+    },
+    {
+      "Year": "2019–2021",
+      "Title": "Health Heroes",
+      "Company": "MEITS Technology",
+      "Technologies": [
+        "Ionic",
+        "Angular",
+        "Node.js"
+      ]
+    },
+    {
+      "Year": "2019–2021",
+      "Title": "Bus Tracking",
+      "Company": "MEITS Technology",
+      "Technologies": [
+        "Angular",
+        "NestJS",
+        "Google Maps"
+      ],
+      "link": "http://allenapp.com/auth/login"
     }
-  ],
-  "Contact.Pretitle": "What’s Next",
-  "Contact.Title": "Get in touch!",
-  "Contact.Content": "if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message.",
-  "Contact.Btn": "Say Hello"
+  ]
 }

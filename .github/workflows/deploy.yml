@@ -1,0 +1,65 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Angular 13 targets Node 16; newer majors break the legacy build pipeline.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Unit tests
+        run: npm run test:ci
+
+      - name: Build (production)
+        run: npm run build-portfolio
+
+      - name: Verify pre-rendered routes exist
+        run: |
+          set -e
+          for route in index.html en/index.html ar/index.html en/projects/index.html 404.html robots.txt sitemap.xml; do
+            test -f "dist/ahmed-mobasher-portfolio/$route" \
+              || { echo "::error::missing $route"; exit 1; }
+            echo "ok  $route"
+          done
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: dist/ahmed-mobasher-portfolio
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

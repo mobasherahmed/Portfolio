@@ -1,14 +1,16 @@
 {
-  "name": "andresjosehr-portfolio",
+  "name": "ahmed-mobasher-portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-portfolio": "ng build --configuration production",
+    "build-portfolio": "ng build --configuration production --base-href /Portfolio/ && node tools/prerender-routes.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prerender": "node tools/prerender-routes.js",
+    "test:ci": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {

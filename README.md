@@ -1,40 +1,71 @@
-# Personal Portfolio
+# Portfolio — Ahmed Mobasher
 
-## Getting Started
+Personal portfolio and engineering case-study site.
+**Live:** https://mobasherahmed.github.io/Portfolio/
 
-I have updated this theme as a personal Portfolio. I have taken the inspiration (and basically all the code) from the wonderful work of andresjosehr you can visit his repo form https://github.com/andresjosehr/andresjosehr-portfolio and Britanny Chiang. You can visit her repo [here](https://github.com/bchiang7/v4)
+Senior Frontend Engineer and Frontend Tech Lead — Angular, TypeScript, Nx monorepos,
+micro frontends and design systems.
 
+---
 
-If you have any idea or you just want to contribute in this repo in order to improve the development architecture, I invite you to do it! If you have some suggestion to me, i will be glade to recipe it
+## Stack
 
-### Prerequisites
+| Area | Choice |
+|---|---|
+| Framework | Angular 13, TypeScript |
+| i18n | `@ngx-translate` — English + Arabic with full RTL |
+| Styling | SCSS, Bootstrap grid |
+| Hosting | GitHub Pages, deployed by GitHub Actions |
+| Analytics | Google Analytics 4 |
 
-You should have npm and Angular CLI installed in your pc. Npm is available with NodeJS in [here](https://nodejs.org/es/). After you install npm, install Angular CLI by typing the following command in your terminal
+## Engineering notes
 
-``` bash
-npm install -g @angular/cli
+**Content is data, not markup.** Experience entries, case studies and the project
+archive all live in `src/assets/i18n/{en,ar}.json` and render through the same
+components. Adding a role or a case study is a data change; the English and Arabic
+files are key-for-key identical so neither can silently drift.
+
+**Routes are pre-rendered because GitHub Pages has no SPA rewrite.**
+A client-side route such as `/Portfolio/en` returns HTTP 404 on Pages — the page
+appears to load via the custom 404 document, but crawlers and link checkers see a
+dead link. [`tools/prerender-routes.js`](tools/prerender-routes.js) writes a real
+`index.html` for every known route after the build, each with its own `lang`, `dir`
+and canonical URL, so every route answers 200. CI fails the build if any of them
+goes missing.
+
+**RTL is a direction change, not a translation.** `LanguageService` sets `lang` and
+`dir` on `<html>`; layout mirrors via logical properties, while Latin technology
+names are isolated with `unicode-bidi` so strings like `AG Grid` don't reorder
+inside Arabic text.
+
+**Case studies degrade without screenshots.** Most of the strongest work is on
+private enterprise repositories, so a case study renders full-width and text-first
+when it has no images, rather than leaving an empty media column.
+
+## Local development
+
+```bash
+npm install --legacy-peer-deps   # Angular 13 predates current peer-dep resolution
+npm start                        # http://localhost:4200
 ```
 
-### Installing
+## Build
 
-Just clone  the repo and execute the following command inside the folder project
-
-``` bash
-npm install
+```bash
+npm run build-portfolio          # production build + route pre-rendering
 ```
 
-### All done!!
+Output lands in `dist/ahmed-mobasher-portfolio/`. Pushing to `main` builds and
+deploys automatically via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
-Now just run
-```
-npm start
-```
-Wait to compile and go to [http://localhost:4200](http://localhost:4200) after compile finish
+## Updating the resume
 
-### Wait! I does not have finished yet!
->## 🚨 Forking this repo (please read!)
+Replace `src/assets/cv/Ahmed-Mobasher-CV.pdf`, keeping the filename. Every download
+link resolves through `src/app/services/cv.constants.ts`.
 
->Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+## Credits
 
-As I have made an attribution to Brittany and andres.
+The visual design originates from [Brittany Chiang's v4](https://github.com/bchiang7/v4),
+by way of the Angular port by [Andrés Hernández](https://github.com/andresjosehr/andresjosehr-portfolio).
+Content, architecture, i18n/RTL support, route pre-rendering and deployment pipeline
+are my own.
