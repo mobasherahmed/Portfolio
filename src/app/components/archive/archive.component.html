@@ -21,9 +21,9 @@
                         <td class="proyect-title">{{item.Title}}</td>
                         <td class="proyect-company hide-on-mobile"><span>{{item.Company}}</span></td>
                         <td class="proyect-skills hide-on-mobile">
-                            <span *ngFor='let tech of item.Technologies; let last = last'>
-                                {{tech}}<span class="separator" *ngIf="!last">·</span>
-                            </span>
+                            <!-- Separators come from CSS: as inline text inside each
+                                 span, bidi reordered them onto the wrong side in RTL. -->
+                            <span class="tech" *ngFor='let tech of item.Technologies'>{{tech}}</span>
                         </td>
                         <td class="proyect-links">
                             <a *ngIf="item.link" [href]="item.link" target="_blank" rel="noopener noreferrer"

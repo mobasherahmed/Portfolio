@@ -118,3 +118,19 @@
         display: none;
     }
 }
+.proyect-skills {
+  /* Separator characters cannot survive bidi here: isolating each name pins the
+     separator to the span's LTR end, which lands it between the wrong pair.
+     Spacing carries the same meaning and works in both directions. */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+
+  .tech {
+    direction: ltr;
+    unicode-bidi: isolate;
+    white-space: nowrap;
+  }
+}
+
+[dir="rtl"] .proyect-skills { justify-content: flex-start; }
