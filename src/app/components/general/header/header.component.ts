@@ -4,8 +4,8 @@ import {trigger, style, query, transition, stagger, animate } from '@angular/ani
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { TranslateService } from '@ngx-translate/core';
 import { FormControl } from '@angular/forms';
-import { LanguageService } from 'src/app/services/language/language.service';
-import { ThisReceiver } from '@angular/compiler';
+import { AppLanguage, LanguageService } from 'src/app/services/language/language.service';
+import { CV_PATH } from 'src/app/services/cv.constants';
 
 
 @Component({
@@ -35,7 +35,6 @@ export class HeaderComponent implements OnInit {
   responsiveMenuVisible: Boolean = false;
   pageYPosition: number;
   languageFormControl: FormControl= new FormControl();
-  cvName: string = "";
 
   constructor(
     private router: Router,
@@ -51,26 +50,25 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  scroll(el) {
-    if(document.getElementById(el)) {
-      document.getElementById(el).scrollIntoView({behavior: 'smooth'});
-    } else{
-      this.router.navigate(['/home']).then(()=> document.getElementById(el).scrollIntoView({behavior: 'smooth'}) );
+  go(elementId: string, analyticsEvent: string): void {
+    this.analyticsService.sendAnalyticEvent(analyticsEvent, 'menu', 'click');
+    this.responsiveMenuVisible = false;
+
+    const target = document.getElementById(elementId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+      return;
     }
-    this.responsiveMenuVisible=false;
+
+    this.router.navigate(['/']).then(() =>
+      document.getElementById(elementId)?.scrollIntoView({ behavior: 'smooth' })
+    );
   }
 
-  downloadCV(){
-    this.languageService.translateService.get("Header.cvName").subscribe(val => {
-      this.cvName = val
-      console.log(val)
-      // app url
-      let url = window.location.href;
-
-      // Open a new window with the CV
-      window.open("../../../../assets/cv" + this.cvName, "_blank");
-    })
-
+  downloadCV(): void {
+    this.analyticsService.sendAnalyticEvent('click_download_cv', 'menu', 'cv');
+    window.open(CV_PATH, '_blank', 'noopener');
+    this.responsiveMenuVisible = false;
   }
 
   @HostListener('window:scroll', ['getScrollPosition($event)'])
@@ -78,7 +76,7 @@ export class HeaderComponent implements OnInit {
         this.pageYPosition=window.pageYOffset
     }
 
-    changeLanguage(language: string) {
+    changeLanguage(language: AppLanguage) {
       this.languageFormControl.setValue(language);
     }
 }

@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { configureServiceTest } from 'src/testing/test-setup';
 
 import { IpserviceService } from './ipservice.service';
 
@@ -6,7 +7,7 @@ describe('IpserviceService', () => {
   let service: IpserviceService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    configureServiceTest();
     service = TestBed.inject(IpserviceService);
   });
 

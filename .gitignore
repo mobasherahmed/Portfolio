@@ -47,3 +47,6 @@ testem.log
 Thumbs.db
 
 public/
+
+# Brand assets and manual steps (not part of the build)
+.brand/

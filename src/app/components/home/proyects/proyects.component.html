@@ -7,62 +7,59 @@
                 </h3>
             </div>
 
-            <div *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index' class="d-flex proyect-container" data-aos="fade-up" data-aos-duration="1000">
-                <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2==0">
-                    <ng-container *ngFor="let img of project.imgs">
-                        <ng-template carouselSlide [id]="project.Title+slide+i">
-                            <div #imgContainer class='img-container'>
-                                <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
-                            </div>
-                        </ng-template>
-                    </ng-container>
-                </owl-carousel-o>
-                <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2==0">
-                    <div class="img-feature-proyect-box">
-                        <div class="img-container" style='width: auto;'>
-                            <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.imgs[0]" width='600px'>
-                        </div>
-                    </div>
-                </div>
-                <div [class.proyect-info-right]='i%2==0' [class.proyect-info-left]='i%2!=0' class="h-100" style="background-image: url('{{project.img}}');">
-                    <div class="proyect-box">
-                        <h4 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="feature-proyect">{{"FeatureProjects.Label" | translate}}</h4>
-                        <h5 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="proyect-name">{{project.Title}}</h5>
+            <article *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index'
+                     class="case-study"
+                     [class.case-study--reversed]="i % 2 !== 0"
+                     [class.case-study--textonly]="!project.imgs?.length"
+                     data-aos="fade-up" data-aos-duration="800">
 
-                        <div class="proyect-description-box" (click)='debug()'>
-                            <p class="mb-0" [innerHTML]="project.Description">
-                            </p>
-                        </div>
-                        <ul [class.justify-content-end]='i%2==0' [class.justify-content-start]='i%2!=0' class="proyect-skills">
-                            <li *ngFor='let technology of project.Technologies' class="ml-3">
-                              <span class="underline technology">{{technology}}</span>
-                            </li>
-                        </ul>
-                        <div [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="proyect-links">
-                            <a *ngIf="project['ghLink']" style='color: inherit' [href]="project['ghLink']" target="_blank"><i class="ml-3 fab fa-github"></i></a>
-                            <a *ngIf="project['demoLink']" style='color: inherit' [href]="project['demoLink']" target="_blank"><i class="ml-3 fas fa-external-link-alt"></i></a>
+                <div class="case-study__media" *ngIf="project.imgs?.length">
+                    <owl-carousel-o class='owl-carousel-o' [options]="customOptions">
+                        <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
+                            <ng-template carouselSlide [id]="project.Title + '-' + imgIndex">
+                                <div class='img-container'>
+                                    <img class='img-feature-proyect rounded'
+                                         [src]="img"
+                                         [attr.alt]="project.Title + ' — screenshot ' + (imgIndex + 1)"
+                                         loading="lazy" decoding="async">
+                                </div>
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
+                </div>
+
+                <div class="case-study__body">
+                    <p class="case-study__label">{{"FeatureProjects.Label" | translate}}</p>
+                    <h4 class="case-study__title">{{project.Title}}</h4>
+                    <p class="case-study__context" *ngIf="project.Context">{{project.Context}}</p>
+
+                    <div class="case-study__panel">
+                        <p class="case-study__description" [innerHTML]="project.Description"></p>
+
+                        <div class="case-study__challenge" *ngIf="project.Challenge">
+                            <h5 class="case-study__challenge-label">{{"FeatureProjects.ChallengeLabel" | translate}}</h5>
+                            <p [innerHTML]="project.Challenge"></p>
                         </div>
                     </div>
-                </div>
-                <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2!=0">
-                    <ng-container *ngFor="let img of project.imgs">
-                        <ng-template carouselSlide [id]="project.Title+slide+i">
-                            <div class='img-container'>
-                                <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
-                            </div>
-                        </ng-template>
-                    </ng-container>
-                </owl-carousel-o>
-                <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2!=0">
-                    <div class="img-feature-proyect-box">
-                        <div class="img-container" style='width: auto;'>
-                            <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.imgs[0]" width='600px'>
-                        </div>
+
+                    <ul class="case-study__tech">
+                        <li *ngFor='let technology of project.Technologies'>
+                            <span class="technology">{{technology}}</span>
+                        </li>
+                    </ul>
+
+                    <div class="case-study__links" *ngIf="project.ghLink || project.demoLink">
+                        <a *ngIf="project.ghLink" [href]="project.ghLink" target="_blank" rel="noopener noreferrer"
+                           [attr.aria-label]="project.Title + ' — source code on GitHub'">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a *ngIf="project.demoLink" [href]="project.demoLink" target="_blank" rel="noopener noreferrer"
+                           [attr.aria-label]="project.Title + ' — live site'">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div>
-            </div>
+            </article>
         </div>
     </div>
 </section>

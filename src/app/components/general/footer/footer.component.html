@@ -2,31 +2,30 @@
     <div [@animateFooter]>
         <ul class="footer-left-bar d-none d-md-block">
             <li>
-                <a (click)='analyticsService.sendAnalyticEvent("click_github", "footer", "github")' href="https://github.com/mobasherahmed" target='_blank'>
-                    <i class="fab fa-github"></i>
+                <a (click)='analyticsService.sendAnalyticEvent("click_github", "footer", "github")'
+                   href="https://github.com/mobasherahmed" target='_blank' rel="noopener noreferrer"
+                   aria-label="Ahmed Mobasher on GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a (click)='analyticsService.sendAnalyticEvent("click_linkedin", "footer", "github")' href="https://www.linkedin.com/in/ahmed-mobasher-10/" target='_blank'>
-                    <i class="fab fa-linkedin-in"></i>
+                <a (click)='analyticsService.sendAnalyticEvent("click_linkedin", "footer", "linkedin")'
+                   href="https://www.linkedin.com/in/ahmed-mobasher-10/" target='_blank' rel="noopener noreferrer"
+                   aria-label="Ahmed Mobasher on LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
         <div class="footer-right-bar d-none d-md-block">
-            <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "footer", "email")' href="mailto:ahmedmobasher00@gmail.com" target='_blank'>ahmedmobasher00@gmail.com </a>
+            <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "footer", "email")'
+               href="mailto:ahmedmobasher00@gmail.com">ahmedmobasher00@gmail.com</a>
         </div>
     </div>
 
-    <div class="footer-credits text-center" >
-        <a (click)='analyticsService.sendAnalyticEvent("click_github_portfolio_andresjose", "footer", "click")' href="https://github.com/mobasherahmed/Portfolio" target="_blank" rel="nofollow noopener noreferrer">
-            <div>edited by Ahmed Mobasher</div>
-        </a>
-        <a (click)='analyticsService.sendAnalyticEvent("click_github_portfolio_andresjose", "footer", "click")' href="https://github.com/andresjosehr/andresjosehr-portfolio" target="_blank" rel="nofollow noopener noreferrer">
-            base code by Jose Andres
-        </a>
-        <a (click)='analyticsService.sendAnalyticEvent("click_github_portfolio_brittany", "footer", "click")' href="https://github.com/bchiang7/v4" target="_blank" rel="nofollow noopener noreferrer">
-             Designed by Brittany Chiang
+    <div class="footer-credits text-center">
+        <a (click)='analyticsService.sendAnalyticEvent("click_github_portfolio", "footer", "click")'
+           href="https://github.com/mobasherahmed/Portfolio" target="_blank" rel="noopener noreferrer">
+            {{"Footer.Built" | translate}}
         </a>
     </div>
-
 </footer>

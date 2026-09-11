@@ -2,40 +2,54 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import { Title, Meta } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
-import {LanguageService} from "src/app/services/language/language.service"
-import { Location } from '@angular/common';
-import { Router } from '@angular/router';
+import { LanguageService } from 'src/app/services/language/language.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  title = 'Ahmed Mobasher-portfolio';
-  
+export class AppComponent implements OnInit {
+  title = 'ahmed-mobasher-portfolio';
+
   constructor(
     private titleService: Title,
     private metaService: Meta,
     private translateService: TranslateService,
-    private location: Location,
-    private languageService: LanguageService
-    ){
-    }
-  ngOnInit(): void{
-    
-    this.languageService.initLanguage()
+    private languageService: LanguageService,
+  ) { }
 
+  ngOnInit(): void {
+    this.languageService.initLanguage();
 
-    this.titleService.setTitle( "Ahmed Mobasher | Senior Frontend Developer" );
+    // Title and description follow the active language.
+    this.translateService.onLangChange.subscribe(() => this.applyMeta());
+    this.applyMeta();
 
-    this.metaService.addTags([
-      {name: 'keywords', content: 'Frontend, backend, full stack, angular, asp.net, software, developer'},
-      {name: 'description', content: 'angular portfolio for ahmed mobasher'},
-    ]);
-    
-    
-    AOS.init(); 
+    AOS.init({
+      once: true,
+      disable: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    });
+  }
 
+  private applyMeta(): void {
+    this.translateService.get(['Meta.Title', 'Meta.Description']).subscribe(t => {
+      this.titleService.setTitle(t['Meta.Title']);
+      this.metaService.updateTag({ name: 'description', content: t['Meta.Description'] });
+      this.metaService.updateTag({ property: 'og:title', content: t['Meta.Title'] });
+      this.metaService.updateTag({ property: 'og:description', content: t['Meta.Description'] });
+    });
+
+    this.metaService.updateTag({
+      name: 'keywords',
+      content: [
+        'Ahmed Mobasher', 'Senior Frontend Engineer', 'Frontend Tech Lead',
+        'Angular Developer', 'Angular Architect', 'TypeScript', 'RxJS', 'NgRx',
+        'Angular Signals', 'Nx Monorepo', 'Micro Frontends', 'Frontend Architecture',
+        'Design Systems', 'GraphQL', 'PrimeNG', 'AG Grid', 'Tailwind CSS',
+        'Cypress', 'Playwright', 'CI/CD', 'Docker', 'Ionic',
+        'AI-Assisted Development', 'Cairo', 'Egypt', 'Remote',
+      ].join(', '),
+    });
   }
 }

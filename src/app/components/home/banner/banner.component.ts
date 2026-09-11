@@ -1,7 +1,8 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import {trigger, state, style, animate, transition, stagger, query } from "@angular/animations"
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
+import { CV_FILE_NAME, CV_PATH } from 'src/app/services/cv.constants';
 
 @Component({
   selector: 'app-banner',
@@ -23,16 +24,13 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
     ])
   ]
 })
-export class BannerComponent implements OnInit {
+export class BannerComponent {
 
-  
+  readonly cvPath = CV_PATH;
+  readonly cvFileName = CV_FILE_NAME;
 
   constructor(
     public analyticsService: AnalyticsService
   ) { }
-
-  ngOnInit(): void { 
-  }
-  
-
 }
+
