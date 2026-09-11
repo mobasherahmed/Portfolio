@@ -374,5 +374,8 @@
       ],
       "link": "http://allenapp.com/auth/login"
     }
-  ]
+  ],
+  "Banner.Availability": "مُتاح لفرص هندسة الواجهات الأمامية على مستوى أول، والقيادة التقنية، ومعمارية الواجهات · القاهرة، مصر · أعمل عن بُعد",
+  "FeatureProjects.Private": "مستودع مؤسسي خاص",
+  "FeatureProjects.ArchiveLink": "عرض أرشيف المشاريع كاملًا"
 }

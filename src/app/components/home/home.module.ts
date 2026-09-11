@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
@@ -31,6 +32,7 @@ export function HttpLoaderFactory(http: HttpClient){
   ],
   imports: [
     CommonModule,
+    RouterModule,
     NgbNavModule,
     CarouselModule,
     TranslateModule.forChild({

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="section-box">
             <div class="mb-4" data-aos="fade-up" data-aos-duration="1000">
-                <h3 class="contact-pre-title big-subtitle">05. {{"Contact.Pretitle" | translate}}</h3>
+                <h3 class="contact-pre-title big-subtitle">04. {{"Contact.Pretitle" | translate}}</h3>
                 <h4 class="e-font contact-title big-title">
                     {{"Contact.Title" | translate}}
                 </h4>
@@ -15,6 +15,35 @@
                     {{"Contact.Btn" | translate}}
                 </a>
             </div>
+
+            <!-- The side rails are desktop-only, so without this row GitHub and
+                 LinkedIn are unreachable on a phone. -->
+            <ul class="contact-links" data-aos="fade-up" data-aos-duration="1000">
+                <li>
+                    <a (click)='analyticsService.sendAnalyticEvent("click_github", "contact", "github")'
+                       href="https://github.com/mobasherahmed" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                    </a>
+                </li>
+                <li>
+                    <a (click)='analyticsService.sendAnalyticEvent("click_linkedin", "contact", "linkedin")'
+                       href="https://www.linkedin.com/in/ahmed-mobasher-10/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a (click)='analyticsService.sendAnalyticEvent("click_download_cv", "contact", "cv")'
+                       [href]="cvPath" [attr.download]="cvFileName">
+                        <i class="fas fa-file-arrow-down" aria-hidden="true"></i> {{"Header.cvBtn" | translate}}
+                    </a>
+                </li>
+                <li>
+                    <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "contact", "email")'
+                       href="mailto:ahmedmobasher00@gmail.com">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> ahmedmobasher00&#64;gmail.com
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

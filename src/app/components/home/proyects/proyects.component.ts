@@ -21,11 +21,16 @@ export class ProyectsComponent implements OnInit, OnDestroy {
    */
   carouselEnabled = true;
 
+  /** Keeps the archive link inside the active language prefix (/en, /ar). */
+  get archiveLink(): string[] {
+    return ['/', this.languageService.language, 'projects'];
+  }
+
   private langSub?: Subscription;
 
   constructor(
     public analyticsService: AnalyticsService,
-    private languageService: LanguageService,
+    public languageService: LanguageService,
   ) { }
 
   ngOnInit(): void {

@@ -375,5 +375,8 @@
       ],
       "link": "http://allenapp.com/auth/login"
     }
-  ]
+  ],
+  "Banner.Availability": "Open to Senior Frontend, Frontend Tech Lead and frontend architecture roles · Cairo, Egypt · Works remotely",
+  "FeatureProjects.Private": "Private enterprise repository",
+  "FeatureProjects.ArchiveLink": "View the full project archive"
 }

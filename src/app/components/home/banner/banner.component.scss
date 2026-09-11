@@ -85,3 +85,27 @@
     h1 { margin-bottom: 14px; }
   }
 }
+
+/* A recruiter's first two questions are "what roles" and "where" — answering
+   them in the hero saves them scrolling 7,000px to the contact section. */
+.banner-availability {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  max-width: 560px;
+  font-family: $CodeFont;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: $LightSlate;
+
+  &__dot {
+    flex: none;
+    width: 8px;
+    height: 8px;
+    margin-top: 0.45rem;
+    border-radius: 50%;
+    background: $Green;
+    box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.15);
+  }
+}

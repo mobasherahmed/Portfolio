@@ -48,6 +48,10 @@
                         </li>
                     </ul>
 
+                    <p class="case-study__private" *ngIf="!project.ghLink && !project.demoLink">
+                        <span aria-hidden="true">⌁</span> {{"FeatureProjects.Private" | translate}}
+                    </p>
+
                     <div class="case-study__links" *ngIf="project.ghLink || project.demoLink">
                         <a *ngIf="project.ghLink" [href]="project.ghLink" target="_blank" rel="noopener noreferrer"
                            [attr.aria-label]="project.Title + ' — source code on GitHub'">
@@ -60,6 +64,10 @@
                     </div>
                 </div>
             </article>
+
+            <a class="case-study__archive" [routerLink]="archiveLink" data-aos="fade-up">
+                {{"FeatureProjects.ArchiveLink" | translate}} <span aria-hidden="true">→</span>
+            </a>
         </div>
     </div>
 </section>

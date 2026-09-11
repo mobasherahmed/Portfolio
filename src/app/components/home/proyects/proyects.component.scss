@@ -413,3 +413,39 @@
   .case-study__tech,
   .case-study__links { justify-content: flex-start; }
 }
+
+/* Most of this work sits on private repositories. Saying so turns an absent
+   link into a stated fact rather than a gap the reader has to interpret. */
+.case-study__private {
+  font-family: var(--font-mono, "SF Mono", monospace);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #5c6a89;
+  margin: 0;
+
+  span { color: #64ffda; margin-inline-end: 0.3rem; }
+}
+
+.case-study__archive {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.85rem 1.6rem;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  color: #64ffda;
+  font-family: var(--font-mono, "SF Mono", monospace);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgba(100, 255, 218, 0.08);
+    color: #64ffda;
+    text-decoration: none;
+  }
+}
+
+[dir="rtl"] .case-study__archive span { transform: scaleX(-1); }
