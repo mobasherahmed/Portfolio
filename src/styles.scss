@@ -232,39 +232,105 @@ button:focus-visible,
 }
 
 /* ── RTL ───────────────────────────────────────────────────────────────────
-   dir="rtl" is set on <html> by LanguageService. Latin technology names stay
-   LTR inside Arabic text so "Angular 18" and "AG Grid" don't reorder. */
+   LanguageService sets dir="rtl" on <html>. Direction alone is not enough here:
+   the theme predates logical properties and Bootstrap 4 ships no RTL build, so
+   every physical left/right in the layout has to be mirrored explicitly. */
 
 [dir="rtl"] {
   text-align: right;
 
-  .section-title,
-  .big-title,
-  .big-subtitle,
-  .about-description,
-  .job-description,
-  .title-tab-content,
-  .job-time {
-    text-align: right;
+  /* Arabic needs more leading than the Latin faces were tuned for. */
+  body, p, li, .job-description, .case-study__panel p {
+    line-height: 1.9;
   }
 
-  .skills-list { padding-right: 0; }
+  /* Section headings: the number sits before the title, the rule after it. */
+  .section-title {
+    .n-section-title {
+      margin-right: 0;
+      margin-left: 10px;
+    }
 
+    &:after {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+
+  /* Experience tabs: active indicator and text move to the right edge. */
+  ::ng-deep .jobs-tabs {
+    a {
+      text-align: right;
+      margin-left: 40px;
+      margin-right: 0;
+    }
+
+    li {
+      border-left: none;
+      border-right: 2px solid $LightestNavy;
+    }
+
+    .tab-content {
+      margin-left: 0;
+      margin-right: 38px;
+    }
+  }
+
+  /* Bulleted lists: arrow flips side and points the other way. */
+  .job-description {
+    padding-left: 0;
+    padding-right: 30px;
+
+    &:before {
+      content: '◃';
+      left: auto;
+      right: 0;
+    }
+  }
+
+  .skills-list li {
+    padding-left: 0;
+    padding-right: 20px;
+
+    &:before {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  /* Fixed side rails swap edges. */
   .footer-left-bar  { left: auto; right: 40px; }
   .footer-right-bar { right: auto; left: 40px; }
 
-  .n-section-title,
-  .nav-number { margin-left: 0.4rem; margin-right: 0; }
+  /* Bootstrap 4 utilities are LTR-only. */
+  .ml-3 { margin-left: 0 !important; margin-right: 1rem !important; }
+  .ml-4 { margin-left: 0 !important; margin-right: 1.5rem !important; }
+  .text-left  { text-align: right !important; }
+  .text-right { text-align: left  !important; }
 
+  .archive-table { text-align: right; }
+
+  /* Latin runs inside Arabic text: keep technology names, dates and code in
+     logical order instead of letting the bidi algorithm reverse them. */
   .technology,
   .nav-number,
   .n-section-title,
+  .case-study__tech li,
+  .proyect-skills span,
   code,
   .code-font {
     direction: ltr;
     unicode-bidi: isolate;
-    display: inline-block;
   }
 
-  .archive-table { text-align: right; }
+  /* Case studies: mirror the alternating columns, not the text. */
+  .case-study__label,
+  .case-study__title,
+  .case-study__context,
+  .case-study__challenge-label { text-align: right; }
+
+  .case-study__tech,
+  .case-study__links { justify-content: flex-start; }
+
+  .lang-switch { margin-inline-start: 0; margin-inline-end: 1rem; }
 }

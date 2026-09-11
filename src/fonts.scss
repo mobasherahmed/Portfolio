@@ -152,3 +152,49 @@
          url('assets/fonts/SFMono/SFMono-Semibold.woff') format('woff');
 }
 
+
+/* ── Arabic ────────────────────────────────────────────────────────────────
+   Calibre and SF Mono are declared with unicode-range U+000-5FF, which stops
+   at U+05FF — Arabic starts at U+0600. Every Arabic glyph was therefore
+   falling back to whatever the OS picked, with mismatched weights and metrics.
+   IBM Plex Sans Arabic covers the range and sits well next to Calibre. */
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+200C-200E, U+2010-2011,
+                   U+FB50-FDFF, U+FE70-FEFC;
+    src: url('assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+200C-200E, U+2010-2011,
+                   U+FB50-FDFF, U+FE70-FEFC;
+    src: url('assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+200C-200E, U+2010-2011,
+                   U+FB50-FDFF, U+FE70-FEFC;
+    src: url('assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+200C-200E, U+2010-2011,
+                   U+FB50-FDFF, U+FE70-FEFC;
+    src: url('assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-700.woff2') format('woff2');
+}
