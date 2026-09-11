@@ -21,6 +21,15 @@ export class ProyectsComponent implements OnInit, OnDestroy {
    */
   carouselEnabled = true;
 
+  /**
+   * The homepage leads with the platform work; everything else stays in the
+   * archive. Guards against the translation pipe handing back the raw key
+   * before the locale file has loaded.
+   */
+  featured(projects: any): any[] {
+    return Array.isArray(projects) ? projects.filter(p => p.featured !== false) : [];
+  }
+
   /** Keeps the archive link inside the active language prefix (/en, /ar). */
   get archiveLink(): string[] {
     return ['/', this.languageService.language, 'projects'];

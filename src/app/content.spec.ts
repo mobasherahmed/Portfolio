@@ -50,6 +50,15 @@ describe('site content', () => {
     expect(blob).not.toContain('muhmmad');
   });
 
+  it('leads the homepage with the platform work', () => {
+    const featured = (en as any)['FeatureProjects.Projects'].filter((p: any) => p.featured !== false);
+    expect(featured.length).toBe(6);
+    expect(featured[0].Title).toBe('Alto NX Platform');
+
+    const arFeatured = (ar as any)['FeatureProjects.Projects'].filter((p: any) => p.featured !== false);
+    expect(arFeatured.length).toBe(featured.length);
+  });
+
   it('gives every case study a technology list', () => {
     for (const p of (en as any)['FeatureProjects.Projects']) {
       expect(p.Technologies?.length).toBeGreaterThan(0);

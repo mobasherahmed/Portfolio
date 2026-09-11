@@ -7,7 +7,7 @@
                 </h3>
             </div>
 
-            <article *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index'
+            <article *ngFor='let project of featured("FeatureProjects.Projects" | translate); let i = index'
                      class="case-study"
                      [class.case-study--reversed]="i % 2 !== 0"
                      [class.case-study--textonly]="!project.imgs?.length"

@@ -125,7 +125,8 @@
         "Tailwind CSS",
         "Storybook",
         "Docker"
-      ]
+      ],
+      "featured": true
     },
     {
       "Title": "Olympus Enterprise Frontend Platform",
@@ -138,7 +139,8 @@
         "Signals / SignalStore",
         "RxJS",
         "Data Visualization"
-      ]
+      ],
+      "featured": true
     },
     {
       "Title": "Frontend Design System & Shared Libraries",
@@ -153,7 +155,8 @@
         "AG Grid Enterprise",
         "Storybook",
         "Tailwind CSS"
-      ]
+      ],
+      "featured": true
     },
     {
       "Title": "Alto / Designer / Signage — Multi-Application Architecture",
@@ -165,7 +168,8 @@
         "Micro Frontends",
         "Nx",
         "Multi-Environment Architecture"
-      ]
+      ],
+      "featured": true
     },
     {
       "Title": "Geidea POS",
@@ -179,7 +183,8 @@
         "TypeScript",
         ".NET Core"
       ],
-      "demoLink": ""
+      "demoLink": "",
+      "featured": true
     },
     {
       "Title": "WinjiGo LMS",
@@ -208,7 +213,8 @@
         "assets/images/WinjiGo/13.png",
         "assets/images/WinjiGo/14.png",
         "assets/images/WinjiGo/15.png"
-      ]
+      ],
+      "featured": true
     },
     {
       "Title": "Meqati",
@@ -232,7 +238,8 @@
         "assets/images/Meqati/9.png",
         "assets/images/Meqati/10.png",
         "assets/images/Meqati/11.png"
-      ]
+      ],
+      "featured": false
     },
     {
       "Title": "Health Heroes",
@@ -250,7 +257,8 @@
         "assets/images/HealthHeroes/3.png",
         "assets/images/HealthHeroes/4.png",
         "assets/images/HealthHeroes/5.png"
-      ]
+      ],
+      "featured": false
     }
   ],
   "OtherProjects.Title": "Other projects",
