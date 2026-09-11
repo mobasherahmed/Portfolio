@@ -340,21 +340,45 @@
   &:focus-visible { outline: 2px solid #64ffda; outline-offset: 4px; }
 }
 
-/* Keyboard users must be able to jump past the nav. */
+/* Keyboard users must be able to jump past the nav.
+   Hidden by clipping rather than a negative offset: under dir="rtl" an element
+   parked at left:-9999px extends the document's scrollable width by that amount
+   (1440 + 9999 = 11439px of sideways scroll on the Arabic page). */
 .skip-link {
   position: absolute;
-  left: -9999px;
-  top: 0;
-  z-index: 1000;
-  padding: 0.75rem 1.25rem;
-  background: #112240;
-  color: #64ffda;
-  border-radius: 0 0 4px 0;
-  font-family: var(--font-mono, "SF Mono", monospace);
-  font-size: 0.85rem;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
 
   &:focus {
-    left: 0;
+    position: fixed;
+    top: 0;
+    inset-inline-start: 0;
+    z-index: 1000;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0.75rem 1.25rem;
+    overflow: visible;
+    clip: auto;
+    clip-path: none;
+    background: #112240;
+    color: #64ffda;
+    border-radius: 0 0 4px 0;
+    font-family: var(--font-mono, "SF Mono", monospace);
+    font-size: 0.85rem;
     outline: 2px solid #64ffda;
   }
+}
+
+/* RTL: the numeral prefix needs its gap on the correct side. */
+:host-context([dir="rtl"]) {
+  .nav-number { margin-left: 6px; margin-right: 0; }
+  .lang-switch { margin-inline-start: 0; margin-inline-end: 1rem; }
 }

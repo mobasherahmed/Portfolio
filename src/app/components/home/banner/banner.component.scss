@@ -16,8 +16,8 @@
                 margin-top: 98px;
             }
 
-            h1{
-    
+            /* The name is the h1 for SEO; the eyebrow above it is a <p>. */
+            .banner-pretitle{
                 color: #64ffda;
                 margin: 0 0 20px 3px;
                 font-size: 16px;
@@ -25,18 +25,20 @@
                 font-family: $CodeFont;
             }
 
-            h2, h3 {
+            h1, h2 {
                 font-weight: 600;
-                font-size: 80px;
+                /* Was a flat 80px with no breakpoint, so it overflowed on
+                   phones in both languages. */
+                font-size: clamp(2.4rem, 7vw, 80px);
                 line-height: 1.1;
                 margin: 0;
                 font-family: $MainFont;
             }
 
-            h2{
+            h1{
                 color: $LightestSlate;
             }
-            h3{  
+            h2{
                 color: $Slate;
             }
 
@@ -59,3 +61,27 @@
 
 
 
+
+/* RTL: :host-context matches the encapsulation attribute, so these win over the
+   LTR rules above — a global [dir="rtl"] selector does not. */
+:host-context([dir="rtl"]) {
+  .section-box-banner {
+    text-align: right;
+
+    .banner-pretitle { margin: 0 3px 20px 0; }
+  }
+
+  .div-btn-banner { text-align: right; }
+
+  /* Arabic script carries more visual weight per character than the Latin
+     faces this scale was chosen for, and needs breathing room between the two
+     headings rather than the tight 1.1 leading. */
+  .section-box-banner {
+    h1, h2 {
+      font-size: clamp(1.9rem, 5vw, 62px);
+      line-height: 1.35;
+    }
+
+    h1 { margin-bottom: 14px; }
+  }
+}

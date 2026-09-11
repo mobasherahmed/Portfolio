@@ -34,6 +34,9 @@
     .skills-list{
         display: grid;
         grid-template-columns: repeat(2,minmax(140px,200px));
+        /* Each column's marker sits at that column's inline edge, so without a
+           gap it reads as a marker belonging to the neighbouring column. */
+        column-gap: 1.25rem;
         overflow: hidden;
         padding: 0;
         margin: 20px 0 0 0;
@@ -103,3 +106,30 @@
     }
 }
 
+
+/* RTL: list markers move to the right edge and the portrait frame mirrors. */
+:host-context([dir="rtl"]) {
+  .skills-list li {
+    padding-left: 0;
+    padding-right: 20px;
+
+    &:before {
+      content: '◃';
+      left: auto;
+      right: 0;
+    }
+  }
+
+  /* The frame is position:relative, so `right` offsets it the other way. */
+  .about-img-container:after {
+    left: auto;
+    right: 23px;
+  }
+
+  @media (max-width: 500px) {
+    .about .about-img-container:after {
+      left: auto;
+      right: 74px;
+    }
+  }
+}

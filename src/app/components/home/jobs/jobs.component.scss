@@ -134,3 +134,52 @@
         }
     }
 }
+/* RTL: the tab rail and its active indicator move to the right edge, and the
+   bullet arrow flips side and direction. */
+:host-context([dir="rtl"]) {
+  .jobs .job-description {
+    padding-left: 0;
+    padding-right: 30px;
+
+    &:before {
+      content: '◃';
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+:host-context([dir="rtl"]) ::ng-deep .jobs-tabs {
+  /* The LTR rules give the anchor width:110% so its text can spill to the right,
+     harmlessly. Mirrored, that spill lands on the clipped side and truncated the
+     longest tab ("Capital Link Globe"), so the rail gets real width instead. */
+  ul {
+    width: 235px;
+    margin-right: 0;
+    margin-left: 40px;
+  }
+
+  a {
+    width: 100%;
+    text-align: right;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  li {
+    border-left: none;
+    border-right: 2px solid $LightestNavy;
+  }
+
+  .tab-content {
+    margin-left: 0;
+    margin-right: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  :host-context([dir="rtl"]) ::ng-deep .jobs-tabs {
+    ul { width: 100% !important; margin-left: 0; }
+    .tab-content { margin-right: 0 !important; }
+  }
+}

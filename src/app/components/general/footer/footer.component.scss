@@ -89,3 +89,9 @@ footer{
     }
 }
 
+
+/* RTL: the two fixed rails swap edges. */
+:host-context([dir="rtl"]) {
+  .footer-left-bar  { left: auto; right: 40px; }
+  .footer-right-bar { right: auto; left: 40px; }
+}
